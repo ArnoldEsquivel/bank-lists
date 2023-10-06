@@ -7,7 +7,7 @@ import PublicRoute from './routes/PublicRoute'
 import Loader from './components/layout/Loader'
 
 const Login = lazy(() => import('./pages/Login/Login'))
-const BanksList = lazy(() => import('./pages/BanksList/BanksList'))
+const BanksList = lazy(() => import('./pages/Banks/Banks'))
 
 export const App = () => {
 	return (
@@ -19,7 +19,7 @@ export const App = () => {
 							<Route path='/' element={<PublicRoute />}>
 								<Route index element={<Login />} />
 							</Route>
-							<Route path='/dashboard' element={<PrivateRoute />}>
+							<Route path='/banks' element={<PrivateRoute />}>
 								<Route index element={<BanksList />} />
 							</Route>
 						</Routes>

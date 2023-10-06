@@ -54,7 +54,7 @@ const Sidebar: React.FC<SidebarProps> = ({ children }) => {
 										${active && style['sidebar-item-active']}
                                         ${!open && style['sidebar-item-close']}
                                     `}
-							to='/dashboard'
+							to='/banks'
 							onClick={() => handleActive()}
 						>
 							{open && <span>Dashboard</span>}

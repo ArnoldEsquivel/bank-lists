@@ -25,9 +25,12 @@ const BankProvider: React.FC<BankProviderProps> = ({ children }) => {
 	const fetchData = async () => {
 		const bankList = await getBanksList()
 		if (Array.isArray(bankList)) {
-			setBanks(bankList)
-			localStorage.setItem('banks', JSON.stringify(bankList))
-			setLoading(false)
+			// This is just to simulate a delay in the response
+			setTimeout(() => {
+				setBanks(bankList)
+				localStorage.setItem('banks', JSON.stringify(bankList))
+				setLoading(false)
+			}, 2000)
 		}
 	}
 

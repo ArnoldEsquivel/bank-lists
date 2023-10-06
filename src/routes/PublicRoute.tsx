@@ -6,7 +6,7 @@ const PublicRoute: FC = () => {
 	const { isAuthenticated } = useAuthContext()
 
 	if (isAuthenticated) {
-		return <Navigate to='/dashboard' />
+		return <Navigate to='/banks' />
 	}
 
 	return <Outlet />

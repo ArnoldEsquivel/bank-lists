@@ -14,8 +14,4 @@ interface BankContextType {
 	loading: boolean
 }
 
-interface TableProps {
-	banks: BankData[]
-}
-
-export type { BankData, BankProviderProps, BankContextType, TableProps }
+export type { BankData, BankProviderProps, BankContextType }

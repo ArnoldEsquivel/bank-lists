@@ -1,0 +1,36 @@
+.table-row {
+	&:last-child {
+		.table-cell {
+			border-bottom: none;
+		}
+	}
+
+	.table-cell {
+		color: $text-secondary-light;
+		padding: 9px;
+		font-size: 1rem;
+		border-bottom: 1px solid $secondary-color;
+		@include selected-text;
+	}
+}
+
+.collapse-container {
+	background-color: $card-inside;
+	margin: 3px 0;
+
+	.table-header {
+		color: $text-primary;
+		padding: 9px;
+		font-weight: bold;
+		font-size: 0.9rem;
+		border-bottom: 2px solid $secondary-color;
+	}
+
+	.table-cell {
+		color: $text-secondary-light;
+		padding: 9px;
+		font-size: 0.9rem;
+		border-bottom: 1px solid $secondary-color;
+		@include selected-text;
+	}
+}

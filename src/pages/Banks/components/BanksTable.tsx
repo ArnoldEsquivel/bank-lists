@@ -1,5 +1,6 @@
 import style from './BanksTable.module.scss'
 import { useBank } from '../../../context/BanksContext'
+import Skeletons from './Skeletons'
 import {
 	Table,
 	TableBody,
@@ -16,18 +17,18 @@ const BankTable: React.FC = () => {
 	return (
 		<TableContainer component={Paper} className={style['table-main-container']}>
 			{loading ? (
-				<div>Loading...</div>
+				<Skeletons />
 			) : (
 				<Table sx={{ minWidth: 660 }} aria-label='simple table'>
 					<TableHead>
 						<TableRow>
-							<TableCell className={style['table-heade']}></TableCell>
+							<TableCell className={style['table-heade']} />
 							<TableCell className={style['table-heade']}>Nombre</TableCell>
 							<TableCell className={style['table-heade']}>
 								Descripción
 							</TableCell>
 							<TableCell align='center' className={style['table-heade']}>
-								Edad
+								Antigüedad
 							</TableCell>
 						</TableRow>
 					</TableHead>
@@ -48,7 +49,7 @@ const BankTable: React.FC = () => {
 									{bank.description}
 								</TableCell>
 								<TableCell align='center' className={style['table-cell']}>
-									{bank.age}
+									{bank.age + ' años'}
 								</TableCell>
 							</TableRow>
 						))}

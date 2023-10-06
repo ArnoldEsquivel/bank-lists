@@ -1,0 +1,15 @@
+.table-mobile-main-container {
+	background-color: $card-background !important;
+	border: 1px solid $primary-color;
+	@include desktop {
+		display: none;
+	}
+
+	.table-header {
+		color: $text-primary;
+		padding: 9px;
+		font-weight: bold;
+		font-size: 1rem;
+		border-bottom: 2px solid $secondary-color;
+	}
+}

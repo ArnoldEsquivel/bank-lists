@@ -78,10 +78,7 @@ const FormLogin = () => {
 					<div className={style['form-login-links']}>
 						<div className={style['form-login-links-item']}>
 							<span>¿Olvidaste tu contraseña?</span>
-							<Link
-								to='/'
-								className={style['form-login-links-button']}
-							>
+							<Link to='/' className={style['form-login-links-button']}>
 								Click aquí
 							</Link>
 						</div>
@@ -91,7 +88,10 @@ const FormLogin = () => {
 								Regístrate
 							</Link>
 						</div>
-						<Button className={style['form-login-button-submit']} type='submit'>
+						<Button
+							className={style['form-login-button-submit']}
+							type='submit'
+						>
 							Iniciar sesión
 						</Button>
 					</div>

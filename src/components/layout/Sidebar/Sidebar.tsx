@@ -6,7 +6,7 @@ import ObtenMas from '../../../assets/obten-mas.svg'
 import ObtenMasIcon from '../../../assets/favicon.ico'
 import { Link } from 'react-router-dom'
 import Logout from './Components/Logout'
-import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
+import AccountBalanceIcon from '@mui/icons-material/AccountBalance'
 import { SidebarProps } from '../../../types/SidebarType'
 
 const Sidebar: React.FC<SidebarProps> = ({ children }) => {
@@ -23,21 +23,25 @@ const Sidebar: React.FC<SidebarProps> = ({ children }) => {
 
 	return (
 		<div className={style['sidebar-main-container']}>
-			<div className={`${style['sidebar-body']} ${open && style['sidebar-body-open']}`}>
+			<div
+				className={`${style['sidebar-body']} ${
+					open && style['sidebar-body-open']
+				}`}
+			>
 				<Button className={style['sidebar-header']} onClick={handleDrawer}>
-					{
-						open
-							? <img
-								src={ObtenMas}
-								alt='Obten Mas logo'
-								className={style['sidebar-logo']}
-							/>
-							: <img
-								src={ObtenMasIcon}
-								alt='Obten Mas logo'
-								className={style['sidebar-logo-close']}
-							/>
-					}
+					{open ? (
+						<img
+							src={ObtenMas}
+							alt='Obten Mas logo'
+							className={style['sidebar-logo']}
+						/>
+					) : (
+						<img
+							src={ObtenMasIcon}
+							alt='Obten Mas logo'
+							className={style['sidebar-logo-close']}
+						/>
+					)}
 				</Button>
 
 				<div className={style['sidebar-divider']}></div>

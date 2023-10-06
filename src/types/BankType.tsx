@@ -1,17 +1,21 @@
 interface BankData {
-    bankName: string;
-    description: string;
-    age: number;
-    url: string;
+	bankName: string
+	description: string
+	age: number
+	url: string
 }
 
 interface BankProviderProps {
-    children: React.ReactNode;
+	children: React.ReactNode
 }
 
 interface BankContextType {
-    banks: BankData[];
-    loading: boolean;
+	banks: BankData[]
+	loading: boolean
 }
 
-export type { BankData, BankProviderProps, BankContextType };
+interface TableProps {
+	banks: BankData[]
+}
+
+export type { BankData, BankProviderProps, BankContextType, TableProps }

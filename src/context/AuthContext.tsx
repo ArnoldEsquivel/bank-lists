@@ -16,12 +16,12 @@ const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 		// Verify session with backend
 		const newSession = {
 			name: 'John Doe',
-			email: session.email
+			email: session.email,
 		}
 
-		Cookies.set("bank-session", JSON.stringify(newSession));
-		setIsAuthenticated(true);
-	};
+		Cookies.set('bank-session', JSON.stringify(newSession))
+		setIsAuthenticated(true)
+	}
 
 	const logout = () => {
 		Cookies.remove('bank-session')

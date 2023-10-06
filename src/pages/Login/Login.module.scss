@@ -1,0 +1,25 @@
+@import '../../styles/variables.scss';
+
+.login-main-container {
+	width: 100vw;
+	height: 100vh;
+	background-color: $background-color;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url('../../assets/obten-mas.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 69%;
+		opacity: 0.2;
+	}
+}

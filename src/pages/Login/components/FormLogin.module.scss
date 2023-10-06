@@ -1,0 +1,145 @@
+.form-login-container {
+	width: 63%;
+	max-width: 600px;
+	min-width: 300px;
+	background-color: $card-background;
+	border-radius: 1rem;
+	opacity: 0.99;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2.7rem;
+
+	h2 {
+		@include text-gradient;
+		font-size: 1.2rem;
+		font-weight: 700;
+		margin: 0 0 1rem 0;
+		padding: 2rem 0 1rem 0;
+		text-align: center;
+	}
+
+	.login-google-button {
+		background-color: #282a2e;
+		text-transform: none;
+		color: white;
+		padding: 0 0.5rem 0 0;
+		border-radius: 1rem;
+		margin: 0 0 2rem 0;
+
+		.login-google-button-icon {
+			border-radius: 100%;
+			width: 2.5rem;
+			height: 2.5rem;
+			margin-right: 0.5rem;
+			background-color: white;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			img {
+				width: 1.5rem;
+				height: 1.5rem;
+			}
+		}
+	}
+
+	.form-login-divider {
+		width: 78%;
+		height: 1px;
+		background-color: $primary-color;
+		border-radius: 1rem;
+	}
+
+	.form-login-form {
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+
+		.form-login-field-container {
+			display: flex;
+			flex-direction: column;
+			margin-top: 1.5rem;
+
+			label {
+				color: white;
+				font-size: 0.8rem;
+				margin: 0 0 0.5rem 0;
+
+				span {
+					color: red;
+				}
+			}
+
+			input {
+				border: none;
+				border-radius: 0.6rem;
+				height: 1.8rem;
+				padding: 3px 12px;
+				background-color: $card-inside;
+				color: white;
+
+				&:focus {
+					outline: none;
+				}
+			}
+
+			.login-form-error {
+				color: red;
+				font-size: 0.7rem;
+				margin: 0.5rem 0 0 0;
+			}
+		}
+
+		.form-login-links {
+			margin: 1.8rem 0;
+			display: flex;
+			justify-content: space-between;
+
+			.form-login-links-item {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				span {
+					color: #c2bebe;
+					font-size: 0.7rem;
+					margin: 0 0 0.5rem 0;
+				}
+
+				.form-login-links-button {
+					text-transform: none;
+					padding: 0;
+					color: $primary-color;
+					font-size: 0.8rem;
+				}
+			}
+
+			.form-login-button-submit {
+				@include primary-button;
+				border-radius: 9px;
+				padding: 3px 15px;
+				width: fit-content;
+				text-transform: none;
+			}
+
+			@include mobile {
+				flex-direction: column;
+				align-items: center;
+				margin-bottom: 12px;
+
+				.form-login-links-item {
+					margin: 0.5rem 0;
+
+					span {
+						margin: 0;
+					}
+				}
+
+				.form-login-button-submit {
+					margin: 0.9rem 0;
+				}
+			}
+		}
+	}
+}

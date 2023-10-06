@@ -24,7 +24,10 @@ const RowsMobile: React.FC<Props> = ({ bank }) => {
 	return (
 		<>
 			<TableRow className={style['table-row']}>
-				<TableCell sx={{ padding: '9px 0' }} className={style['table-cell']}>
+				<TableCell
+					sx={{ padding: '9px 0', width: '1rem' }}
+					className={style['table-cell']}
+				>
 					<IconButton
 						aria-label='expand row'
 						size='small'
@@ -37,11 +40,11 @@ const RowsMobile: React.FC<Props> = ({ bank }) => {
 						)}
 					</IconButton>
 				</TableCell>
-				<TableCell className={style['table-cell']}>
+				<TableCell className={style['table-cell']} sx={{ width: '1rem' }}>
 					<img
 						src={bank.url}
 						alt={bank.bankName}
-						style={{ width: '41px', height: '30px' }}
+						style={{ width: '42px', height: '30px' }}
 					/>
 				</TableCell>
 				<TableCell className={style['table-cell']}>{bank.bankName}</TableCell>

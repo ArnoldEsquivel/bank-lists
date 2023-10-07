@@ -7,31 +7,37 @@ const Skeletons = () => {
 			<Skeleton
 				variant='text'
 				sx={{ fontSize: '3.9rem', backgroundColor: '#383838' }}
+				data-testid='skeleton-element'
 			/>
 			<Skeleton
 				variant='rectangular'
 				height={36}
 				sx={{ backgroundColor: '#383838' }}
+				data-testid='skeleton-element'
 			/>
 			<Skeleton
 				variant='rectangular'
 				height={36}
 				sx={{ backgroundColor: '#383838' }}
+				data-testid='skeleton-element'
 			/>
 			<Skeleton
 				variant='rectangular'
 				height={36}
 				sx={{ backgroundColor: '#383838' }}
+				data-testid='skeleton-element'
 			/>
 			<Skeleton
 				variant='rectangular'
 				height={36}
 				sx={{ backgroundColor: '#383838' }}
+				data-testid='skeleton-element'
 			/>
 			<Skeleton
 				variant='rectangular'
 				height={36}
 				sx={{ backgroundColor: '#383838' }}
+				data-testid='skeleton-element'
 			/>
 		</Stack>
 	)

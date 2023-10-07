@@ -36,7 +36,7 @@ const FormLogin = () => {
 				validationSchema={validationSchema}
 				onSubmit={handleSubmit}
 			>
-				<Form className={style['form-login-form']}>
+				<Form className={style['form-login-form']} data-testid='form-login'>
 					<div className={style['form-login-field-container']}>
 						<label htmlFor='email'>
 							Correo electrónico <span>*</span>
